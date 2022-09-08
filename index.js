@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //     });
 // });
 
-app.get('/ussd', (req, res) => {
+app.post('/ussd', (req, res) => {
     const {
         sessionId,
         serviceCode,
